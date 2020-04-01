@@ -7,20 +7,44 @@
     <title>Sorted Sorting</title>
     <meta name="description" content="Sorted Sorting">
     <meta name="author" content="SitePoint" >
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1 id="header">Sorting, well, Sorting</h1>
-    <p class="buttons">
-        <button id="regionsButton" onclick="buttonChangeHandler()">Regions</button>
-    </p>
-    <p>
-        <ul  id="countriesList" style="visibility:hidden">
-
+    <div class="regions">
+        <p class="buttons">
+            <button id="regionsButton" onclick="buttonChangeHandler()">Regions</button>
+        </p>
+        <p>
+        <ul  id="regionsList" style="display: none;">
         </ul>
-    </p>
+        </p>
+    </div>
+    <div class="capricorns">
+        <p class="buttons">
+            <button id="capricornButton" onclick="changeHandleonClickCapricorns()">Capricorn Ladies</button>
+        </p>
+        <p>
+            <ul id="capricornList" style="display: none;">
+
+            </ul>
+        </p>
+    </div>
+    <div class="CreditCardExpiry">
+        <p class="buttons">
+            <button id="CreditCardExpiryButton" onclick="changeHandleonClickCreditCardExpiry()">Credit Card Expiry</button>
+        </p>
+        <p>
+            <ul id="CreditCardExpiryList" style="display: none;">
+
+            </ul>
+        </p>
+    </div>
     <script src="randomPersonData.js"></script>
     <script src="script.js"></script>
+    <script src="capricornList.js"></script>
+    <script src="oldCC.js"></script>
 </body>
 
 
